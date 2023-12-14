@@ -4,9 +4,39 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+		    align-items: center;
+		    height: 100vh;
+		    margin: 0;
+		    background-color: #f0f0f0;
+		}
+
+		.pulsating-box {
+			width: 100px;
+		    height: 100px;
+		    background-color: red;
+		    animation: pulse 1s ease-in-out infinite;
+		}
+
+		@keyframes pulse {
+			0% {
+				transform: scale(1);
+			}
+		    50% {
+				transform: scale(1.2);
+		    }
+		    100% {
+				transform: scale(1);
+		    }
+		}
+	</style>
 </head>
 
 <body>
+	<div class="pulsating-box"></div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
